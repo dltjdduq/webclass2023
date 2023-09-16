@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'GoryeongStrawberry';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GoryeongStrawberry';
+    background-image: url('./bg.jpg');
+    background-size: cover;
+}
+
+
+#name-modal{
+    width: 400px;
+    height: 200px;
+    background-color: #16FF00;
+    border-radius: 30px;
+
+
+    /*모달안에있는 내용들을 중앙정렬 할것이다 이말이야*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*모달 찰을 중앙에 위치*/
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
