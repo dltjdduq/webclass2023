@@ -1,33 +1,67 @@
 @font-face {
-    font-family: 'GoryeongStrawberry';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'GoryeongStrawberry';
-    background-image: url('./bg.jpg');
-    background-size: cover;
+    font-family: 'MapoFlowerIsland';
 }
 
+body {
+    background-image: url('./background.jpg');
+    background-size: 'cover';
+}
 
 #name-modal{
-    width: 400px;
-    height: 200px;
-    background-color: #16FF00;
+    width: 450px;
+    height: 275px;
+    background-color: #FFC8C8;
     border-radius: 30px;
-
-
-    /*모달안에있는 내용들을 중앙정렬 할것이다 이말이야*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /*모달 찰을 중앙에 위치*/
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/* 스타일링 우선순위 : id > class > tag이름 */
+.hide{
+    display: none !important;
+}
+
+
+.show {
+    display: block; 
+}
+
+
+#contents{
+    padding: 80px 50px;
+}
+
+#box-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* box-container id 선택자 하위에 있는 모든 img태그 */
+#box-container img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#result-message{
+    width: 50;
+    margin: 0 auto; /* 수평 정렬*/
+    background-color: rgba(0, 0, 0, 0.800);
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center; /*글을 가운데 정렬*/
 }
